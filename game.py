@@ -37,7 +37,7 @@ def startGTN():
         userGuess = input("Enter a number from 10000 - 99999: ")
         if int(userGuess) == NumToGuess:
             guesses += 1
-            print(f"Congrats, you guessed the number with {guesses} guesses.\n({NumToGuess})")
+            print(f"Congrats, you guessed the number ({NumToGuess}) with {guesses} guesses.")
             break
         elif userGuess != NumToGuess and userGuess.isnumeric():
             isHighLow(int(NumToGuess),int(userGuess))
