@@ -11,7 +11,7 @@ def stopTime(start):
 def convertTime(finish):
     sec = int(finish) % 60
     minute = int(finish/60) % 60
-    converted = f"{minute:02}:{sec:02}"
+    converted = f"00:{minute:02}:{sec:02}"
     return converted
 
 

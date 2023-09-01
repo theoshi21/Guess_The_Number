@@ -10,7 +10,7 @@ while(gameState):
     startGTN()
     finish = stopTime(start)
     convert = convertTime(finish)
-    print(f"TIME: {convert}s")
+    print(f"TIME: {convert}")
     print()
     gameState = play()
 
