@@ -32,16 +32,20 @@ def sameCounter(sysNum,userNum):
 
 def startGTN():
     NumToGuess = randint(10000,99999)
+    guesses = 0
     while(True):
         userGuess = input("Enter a number from 10000 - 99999: ")
         if int(userGuess) == NumToGuess:
-            print(f"Congrats, you guessed the number! ({NumToGuess})")
+            guesses += 1
+            print(f"Congrats, you guessed the number with {guesses} guesses.\n({NumToGuess})")
             break
         elif userGuess != NumToGuess and userGuess.isnumeric():
             isHighLow(int(NumToGuess),int(userGuess))
             sameCounter(split(NumToGuess),split(userGuess))
+            guesses += 1
             print()
         else: print("Invalid answer, try again.")
+
 
 
 
